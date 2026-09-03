@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Mon Amour - Login</title>
+    <title>Primavera - Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .input {
+            border: 1px solid #8B0000;
+            border-radius: 10px;
+            color: black;
+            padding: 8px;
+            margin-bottom: 19px;
+            margin-top: 3px;
+            background-color: #ffcccc;
+            color: #8B0000;
+            width: 330px;
+            outline: invert;
+        }
+
+        input:focus {
+            outline-color: red;
+            outline-width: 5px;
+        }
+
+        .btn-enviar {
+            width: 100%;
+            margin-top: 30px;
+            border: 2px solid #8B0000;
+            border-radius: 200px;
+            padding: 15px;
+            background-color: #ff4d4d;
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-enviar:hover {
+            color: #8B0000;
+            background-color: white;
+        }
+
+        .btn-cadastro {
+            margin-top: 20px;
+            border: 2px solid #8B0000;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: #ff4d4d;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-cadastro:hover {
+            background-color: white;
+        }
+
+        .btn-cadastro a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .btn-cadastro a:hover {
+            color: #8B0000;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <h1 class="titulo_principal"
+        style="color: red;
+               background-color: white;
+               border: 5px solid darkred;
+               margin: auto;
+               border-radius: 100px;
+               width: 300px;">
+        Hotel Primavera
+    </h1>
+
+    <br>
+
+    <h2 class="titulo_secundario">Acesso do Cliente</h2>
+
+    <form class="form" action="autenticar.php" method="post">
+
+        <label class="label" for="email">Email</label><br>
+        <input class="input" type="email"id="email"name="email"placeholder="seuemail@email.com.br">
+        <br>
+        <label class="label" for="senha">Senha</label><br>
+        <input class="input"type="password"id="senha"name="senha"placeholder="Sua Senha">
+
+        <br><br>
+
+        <button class="btn-enviar" type="submit">
+            ENTRAR
+        </button>
+
+    </form>
+
+    <button class="btn-cadastro">
+        <a href="http://localhost/hotel/cadastro_cliente.html">
+            Não é cadastrado?
+            <br>
+            Aperte aqui
+        </a>
+    </button>
+
 </body>
 </html>

@@ -13,7 +13,7 @@ VALUES ('$nome', '$email', '$telefone', '$senha')";
 if(mysqli_query($conexao,$sql)){
     echo "<br>Cadastro realizado com sucesso!";
 }else{
-    echo "<br>Error 404";
+    echo "<br>Error 0AETR45";
 }
 
 ?>
