@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primavera - Login</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 
     <style>
+
+        .meio {
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .form {
+            width: 400px;
+            margin: auto;
+            text-align: left;
+        }
+
         .input {
             border: 1px solid #8B0000;
             border-radius: 10px;
-            color: black;
             padding: 8px;
             margin-bottom: 19px;
             margin-top: 3px;
@@ -19,6 +32,9 @@
             color: #8B0000;
             width: 330px;
             outline: invert;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         input:focus {
@@ -32,8 +48,8 @@
             border: 2px solid #8B0000;
             border-radius: 200px;
             padding: 15px;
-            background-color: #ff4d4d;
-            color: black;
+            background-color: #0056b3;
+            color: white;
             cursor: pointer;
             font-weight: bold;
         }
@@ -43,10 +59,15 @@
             background-color: white;
         }
 
+        .cadastro {
+            position: absolute;
+            left: 5px;
+            bottom: 25px;
+        }
+
         .btn-cadastro {
-            margin-top: 20px;
             border: 2px solid #8B0000;
-            border-radius: 20px;
+            border-radius: 30px;
             padding: 10px 20px;
             background-color: #ff4d4d;
             cursor: pointer;
@@ -65,48 +86,97 @@
         .btn-cadastro a:hover {
             color: #8B0000;
         }
+
     </style>
 </head>
 
 <body>
 
+    <div>
+
     <h1 class="titulo_principal"
-        style="color: red;
-               background-color: white;
-               border: 5px solid darkred;
-               margin: auto;
-               border-radius: 100px;
-               width: 300px;">
+        style="
+            color: red;
+            background-color: white;
+            border: 5px solid darkred;
+            margin: auto;
+            border-radius: 100px;
+            width: 300px;
+        ">
         Hotel Primavera
     </h1>
-
+</div>
     <br>
 
-    <h2 class="titulo_secundario">Acesso do Cliente</h2>
+  
 
-    <form class="form" action="autenticar.php" method="post">
+    <div class="meio">
 
-        <label class="label" for="email">Email</label><br>
-        <input class="input" type="email"id="email"name="email"placeholder="seuemail@email.com.br">
-        <br>
-        <label class="label" for="senha">Senha</label><br>
-        <input class="input"type="password"id="senha"name="senha"placeholder="Sua Senha">
+        <h2 class="titulo_secundario"
+            style="
+                color: #333333;
+                text-align: center;
+            ">
+            Acesso do Cliente
+        </h2>
 
-        <br><br>
+        <div>
 
-        <button class="btn-enviar" type="submit">
-            ENTRAR
+        <form class="form" action="autenticar.php" method="post">
+
+            <label class="label" for="email">
+                Email
+            </label>
+
+            <br>
+
+            <input class="input"
+                   type="email"
+                   id="email"
+                   name="email"
+                   placeholder="seuemail@email.com.br">
+
+            <br>
+
+            <label class="label" for="senha">
+                Senha
+            </label>
+
+            <br>
+
+            <input class="input"
+                   type="password"
+                   id="senha"
+                   name="senha"
+                   placeholder="Sua Senha">
+
+            <br><br>
+
+            <button class="btn-enviar" type="submit">
+                ENTRAR
+            </button>
+
+        </form>
+</div>
+    </div>
+
+
+    
+
+    <div class="cadastro">
+
+        <button class="btn-cadastro">
+
+            <a href="http://localhost/hotel/cadastro_cliente.html">
+                Não é cadastrado?
+                <br>
+                Aperte aqui
+            </a>
+
         </button>
 
-    </form>
-
-    <button class="btn-cadastro">
-        <a href="http://localhost/hotel/cadastro_cliente.html">
-            Não é cadastrado?
-            <br>
-            Aperte aqui
-        </a>
-    </button>
+    </div>
 
 </body>
+
 </html>
