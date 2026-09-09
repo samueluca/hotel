@@ -1,181 +1,178 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primavera - Login</title>
 
-    <link rel="stylesheet" href="css/style2.css">
+```
+<title>Hotel Primavera - Login</title>
 
-    <style>
+<link rel="stylesheet" href="css/style2.css">
 
-        .meio {
-            width: 500px;
-            margin: auto;
-            text-align: center;
-        }
+<style>
 
-        .form {
-            width: 400px;
-            margin: auto;
-            text-align: left;
-        }
+    body {
+        text-align: center;
+    }
 
-        .input {
-            border: 1px solid #8B0000;
-            border-radius: 10px;
-            padding: 8px;
-            margin-bottom: 19px;
-            margin-top: 3px;
-            background-color: #ffcccc;
-            color: #8B0000;
-            width: 330px;
-            outline: invert;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .titulo {
+        color: red;
+        background-color: white;
+        border: 5px solid darkred;
+        border-radius: 100px;
+        width: 300px;
+        margin: 30px auto;
+        padding: 10px;
+    }
 
-        input:focus {
-            outline-color: red;
-            outline-width: 5px;
-        }
+    .meio {
+        width: 500px;
+        margin: 50px auto;
+        text-align: center;
+    }
 
-        .btn-enviar {
-            width: 100%;
-            margin-top: 30px;
-            border: 2px solid #8B0000;
-            border-radius: 200px;
-            padding: 15px;
-            background-color: #0056b3;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
-        }
+    .form {
+        width: 400px;
+        margin: auto;
+        text-align: left;
+    }
 
-        .btn-enviar:hover {
-            color: #8B0000;
-            background-color: white;
-        }
+    .input {
+        width: 330px;
+        padding: 10px;
+        margin: 8px auto 20px auto;
+        display: block;
 
-        .cadastro {
-            position: absolute;
-            left: 5px;
-            bottom: 25px;
-        }
+        border: 1px solid darkred;
+        border-radius: 10px;
 
-        .btn-cadastro {
-            border: 2px solid #8B0000;
-            border-radius: 30px;
-            padding: 10px 20px;
-            background-color: #ff4d4d;
-            cursor: pointer;
-            font-weight: bold;
-        }
+        background-color: #ffcccc;
+        color: darkred;
+    }
 
-        .btn-cadastro:hover {
-            background-color: white;
-        }
+    .input:focus {
+        outline: 3px solid red;
+    }
 
-        .btn-cadastro a {
-            color: black;
-            text-decoration: none;
-        }
+    .btn-enviar {
+        width: 100%;
+        padding: 15px;
 
-        .btn-cadastro a:hover {
-            color: #8B0000;
-        }
+        margin-top: 15px;
 
-    </style>
+        border: 2px solid darkred;
+        border-radius: 30px;
+
+        background-color: #0056b3;
+        color: white;
+
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .btn-enviar:hover {
+        background-color: white;
+        color: darkred;
+    }
+
+    .cadastro {
+        position: absolute;
+        left: 10px;
+        bottom: 25px;
+    }
+
+    .btn-cadastro {
+        padding: 10px 20px;
+
+        border: 2px solid darkred;
+        border-radius: 30px;
+
+        background-color: #ff4d4d;
+
+        font-weight: bold;
+    }
+
+    .btn-cadastro:hover {
+        background-color: white;
+    }
+
+    .btn-cadastro a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .btn-cadastro a:hover {
+        color: darkred;
+    }
+
+</style>
+```
+
 </head>
 
 <body>
 
-    <div>
+```
+<h1 class="titulo">
+    Hotel Primavera
+</h1>
 
-    <h1 class="titulo_principal"
-        style="
-            color: red;
-            background-color: white;
-            border: 5px solid darkred;
-            margin: auto;
-            border-radius: 100px;
-            width: 300px;
-        ">
-        Hotel Primavera
-    </h1>
-</div>
-    <br>
+<div class="meio">
 
-  
+    <h2>
+        Acesso do Cliente
+    </h2>
 
-    <div class="meio">
+    <form class="form" action="autenticar.php" method="post">
 
-        <h2 class="titulo_secundario"
-            style="
-                color: #333333;
-                text-align: center;
-            ">
-            Acesso do Cliente
-        </h2>
+        <label for="email">
+            Email
+        </label>
 
-        <div>
+        <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuemail@email.com.br"
+            required
+        >
 
-        <form class="form" action="autenticar.php" method="post">
+        <label for="senha">
+            Senha
+        </label>
 
-            <label class="label" for="email">
-                Email
-            </label>
+        <input
+            class="input"
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Sua senha"
+            required
+        >
 
-            <br>
-
-            <input class="input"
-                   type="email"
-                   id="email"
-                   name="email"
-                   placeholder="seuemail@email.com.br">
-
-            <br>
-
-            <label class="label" for="senha">
-                Senha
-            </label>
-
-            <br>
-
-            <input class="input"
-                   type="password"
-                   id="senha"
-                   name="senha"
-                   placeholder="Sua Senha">
-
-            <br><br>
-
-            <button class="btn-enviar" type="submit">
-                ENTRAR
-            </button>
-
-        </form>
-</div>
-    </div>
-
-
-    
-
-    <div class="cadastro">
-
-        <button class="btn-cadastro">
-
-            <a href="http://localhost/hotel/cadastro_cliente.html">
-                Não é cadastrado?
-                <br>
-                Aperte aqui
-            </a>
-
+        <button class="btn-enviar" type="submit">
+            ENTRAR
         </button>
 
-    </div>
+    </form>
+
+</div>
+
+<div class="cadastro">
+
+    <button class="btn-cadastro">
+        <a href="cadastro_cliente.html">
+            Não é cadastrado?
+            <br>
+            Aperte aqui
+        </a>
+    </button>
+
+</div>
+```
 
 </body>
 

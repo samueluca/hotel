@@ -15,8 +15,8 @@ $resultado = mysqli_query(
 if(mysqli_num_rows($resultado) > 0){
     echo "Login realizado com sucesso!";
 }else{
-    echo "Email ou senha inválidos! Tente novamente!\n";
+    echo "Email ou senha inválidos! Tente novamente!<br>";
     echo "<a href='login.html'>VOLTAR</a>";
 }
 
-?> 
+?>
