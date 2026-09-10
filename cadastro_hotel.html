@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel - Cadastro</title>
+
+<style>
+
+    .form {
+        width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .input {
+        border: 1px solid #1E3A5F;
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 19px;
+        margin-top: 3px;
+        background-color: rgb(104, 1, 1);
+        color: blue;
+        width: 330px;
+        outline: invert;
+    }
+
+    input:focus {
+        outline-color: blue;
+        outline-width: 5px;
+    }
+
+    .select {
+        border: 1px solid #1E3A5F;
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 19px;
+        background-color: rgb(101, 0, 0);
+        color: rgb(234, 255, 0);
+        width: 350px;
+    }
+
+    .btn-enviar {
+        width: 100%;
+        margin-top: 30px;
+        border: 2px solid #1E3A5F;
+        border-radius: 200px;
+        padding: 15px;
+        background-color: rgb(101, 0, 0);
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .btn-enviar:hover {
+        color: #2563EB;
+        background-color: white;
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<h1 class="titulo_principal"
+    style="
+    color: blue;
+    background-color: white;
+    border: 5px solid darkblue;
+    margin: auto;
+    border-radius: 100px;
+    width: 300px;
+    ">
+
+   Hotel - Cadastro
+
+</h1>
+
+<br>
+
+<h2 class="titulo_secundario" style="text-align: center;">
+
+    Cadastro de Hotel
+
+</h2>
+
+<form class="form" action="salvar_hotel.php" method="post">
+
+    <label class="label" for="texto"> Nome do Hotel
+    </label>
+    <br>
+    <input class="input"type="text"id="texto"name="texto"placeholder="Nome do hotel"required>
+    <br>
+    <label class="label" for="cidade"> Cidade
+    </label>
+    <br>
+    <input class="input"type="text"id="cidade"name="cidade"placeholder="Sua cidade"required>
+    <br>
+
+    <label class="label" for="avaliacao">
+        Avaliação
+    </label>
+
+    <br>
+
+    <select class="select"
+            name="avaliacao"
+            id="avaliacao"
+            required>
+
+        <option value="">Classificação em estrelas</option>
+        <option value="1">1 Estrela - Ruim</option>
+        <option value="2">2 Estrelas - Regular</option>
+        <option value="3">3 Estrelas - Bom</option>
+ <option value="4">4 Estrelas - Muito Bom</option>
+        <option value="5">5 Estrelas - Excelente</option>
+    </select>
+
+    <br>
+
+    <button class="btn-enviar" type="submit">
+        SALVAR
+    </button>
+
+</form>
+```
+
+</body>
+
+</html>
