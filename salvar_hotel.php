@@ -1,8 +1,8 @@
 <?php
 
-$nome = $_POST["nome"];
-$cidade = $_POST["cidade"];
-$estrelas = $_POST["estrelas"];
+$nome = $_POST['nome'];
+$cidade = $_POST['cidade'];
+$estrelas = $_POST['estrelas'];
 
 echo "<h1>Hotel cadastrado!</h1>";
 

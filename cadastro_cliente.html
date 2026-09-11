@@ -1,63 +1,105 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Primavera - Cadastro</title>
+
     <link rel="stylesheet" href="css/style.css">
+
     <style>
-        .input{
-            border: 1px solid #1E3A5F;
-            border-radius: 10px;
-            color: black;
-            padding: 8px;
-            margin-bottom: 19px;
-            margin-top: 3px;
-            background-color: darkturquoise;
-            color: blue;
-            width: 330px;
-            outline: invert;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #780101;
         }
 
-        input:focus{
-            outline-color: blue;
-            outline-width: 5px;
+        .form {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid rgb(139, 0, 0);
         }
-        
-        .btn-enviar{
-            width: 100%;
-            margin-top: 30px;
-            border: 2px solid #1E3A5F;
-            border-radius: 200px;
-            padding: 15px;
-            width: 100%;
-            background-color: darkturquoise;
-            color: black;
+
+        .titulo_principal {
+            color: rgb(198, 0, 0);
+            background-color: white;
+            border: 3px solid rgb(6, 6, 174);
+            margin: 30px auto;
+            border-radius: 30px;
+            width: 300px;
+            padding: 10px;
+        }
+
+        .titulo_secundario {
+            color: #99ff00;
+        }
+
+        .input {
+            border: 1px solid darkblue;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 330px;
+        }
+
+        .btn-enviar {
+            width: 350px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            background-color: darkblue;
+            color: white;
             cursor: pointer;
             font-weight: bold;
         }
 
-        .btn-enviar:hover{
-            
-            color: #2563EB;
-            background-color: white;
+        .btn-enviar:hover {
+            background-color: #2563EB;
         }
     </style>
+
 </head>
+
 <body>
-    <h1 class="titulo_principal" style="color: blue; background-color: white; border: 5px solid darkblue; margin: auto; border-radius: 100px; width: 300px;">Hotel Mon Amour</h1>
-    <br>
-    <h2 class="titulo_secundario">Cadastro de Cliente</h2>
+
+    <h1 class="titulo_principal">
+        🏨 Hotel Primavera
+    </h1>
+
+    <h2 class="titulo_secundario">
+        Cadastro de Cliente
+    </h2>
+
+
+
+
     <form class="form" action="salvar_cliente.php" method="post">
-        <label class="label" for="nome">Nome Completo</label><br>
-        <input class="input" type="text" id="nome" name="nome" placeholder="Seu Nome"><br>
-        <label class="label" for="email">Email</label><br>
-        <input class="input" type="email" id="email" name="email" placeholder="seuemail@email.com.br"><br>
-        <label class="label" for="tel">Telefone</label><br>
-        <input class="input" type="text" id="tel" name="tel" placeholder="(xx) xxxxx-xxxx"><br>
-        <label class="label" for="senha">Senha</label><br>
-        <input class="input" type="password" id="senha" name="senha" placeholder="Sua Senha"><br><br>
-        <button class="btn-enviar">SALVAR</button>
+        <label class="label" for="nome"> Nome Completo</label><br>
+        <input class="input" type="text" id="nome" name="nome" placeholder="Seu Nome" required><br>
+        <label class="label" for="email"> Email</label><br>
+        <input class="input" type="email" id="email" name="email" placeholder="seuemail@email.com.br" required> <br>
+        <label class="label" for="tel">Telefone</label> <br>
+        <input class="input" type="text" id="tel" name="tel" placeholder="(xx) xxxxx-xxxx" required> <br>
+        <label class="label" for="senha">Senha </label><br>
+        <input class="input" type="password" id="senha" name="senha" placeholder="Sua Senha" required>
+        <br><br>
+
+        <button class="btn-enviar" type="submit">
+            SALVAR
+        </button>
+
     </form>
+
 </body>
+
 </html>
+```

@@ -1,178 +1,158 @@
+
 <!DOCTYPE html>
 
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>Hotel Primavera - Login</title>
+    <title>Hotel Primavera - Login</title>
 
-<link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style2.css">
 
-<style>
+    <style>
 
-    body {
-        text-align: center;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #780101;
+        }
 
-    .titulo {
-        color: red;
-        background-color: white;
-        border: 5px solid darkred;
-        border-radius: 100px;
-        width: 300px;
-        margin: 30px auto;
-        padding: 10px;
-    }
+        .titulo {
+            color: rgb(198, 0, 0);
+            background-color: white;
+            border: 3px solid rgb(6, 6, 174);
+            margin: 30px auto;
+            border-radius: 30px;
+            width: 300px;
+            padding: 10px;
+        }
 
-    .meio {
-        width: 500px;
-        margin: 50px auto;
-        text-align: center;
-    }
+        .meio {
+            width: 500px;
+            margin: 50px auto;
+            text-align: center;
+        }
 
-    .form {
-        width: 400px;
-        margin: auto;
-        text-align: left;
-    }
+        .form {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid rgb(139, 0, 0);
+            text-align: center;
+        }
 
-    .input {
-        width: 330px;
-        padding: 10px;
-        margin: 8px auto 20px auto;
-        display: block;
+        .input {
+            border: 1px solid darkblue;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 330px;
+        }
 
-        border: 1px solid darkred;
-        border-radius: 10px;
+        .input:focus {
+            outline: 3px solid blue;
+        }
 
-        background-color: #ffcccc;
-        color: darkred;
-    }
+        .btn-enviar {
+            width: 350px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
 
-    .input:focus {
-        outline: 3px solid red;
-    }
+        .btn-enviar:hover {
+            background-color: #2563EB;
+        }
 
-    .btn-enviar {
-        width: 100%;
-        padding: 15px;
+        .cadastro {
+            position: absolute;
+            left: 10px;
+            bottom: 25px;
+        }
 
-        margin-top: 15px;
+        .btn-cadastro {
+            padding: 10px 20px;
+            border: 2px solid darkblue;
+            border-radius: 8px;
+            background-color: white;
+            font-weight: bold;
+        }
 
-        border: 2px solid darkred;
-        border-radius: 30px;
+        .btn-cadastro:hover {
+            background-color: #2563EB;
+        }
 
-        background-color: #0056b3;
-        color: white;
+        .btn-cadastro a {
+            color: darkblue;
+            text-decoration: none;
+        }
 
-        cursor: pointer;
-        font-weight: bold;
-    }
+        .btn-cadastro a:hover {
+            color: white;
+        }
 
-    .btn-enviar:hover {
-        background-color: white;
-        color: darkred;
-    }
+        h2 {
+            color: #99ff00;
+        }
 
-    .cadastro {
-        position: absolute;
-        left: 10px;
-        bottom: 25px;
-    }
-
-    .btn-cadastro {
-        padding: 10px 20px;
-
-        border: 2px solid darkred;
-        border-radius: 30px;
-
-        background-color: #ff4d4d;
-
-        font-weight: bold;
-    }
-
-    .btn-cadastro:hover {
-        background-color: white;
-    }
-
-    .btn-cadastro a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .btn-cadastro a:hover {
-        color: darkred;
-    }
-
-</style>
-```
+    </style>
 
 </head>
 
 <body>
 
-```
-<h1 class="titulo">
-    Hotel Primavera
-</h1>
+    <h1 class="titulo">
+        🏨 Hotel Primavera
+    </h1>
 
-<div class="meio">
+    <div class="meio">
 
-    <h2>
-        Acesso do Cliente
-    </h2>
+        <h2>
+            Acesso do Cliente
+        </h2>
 
-    <form class="form" action="autenticar.php" method="post">
+        <form class="form" action="autenticar.php" method="post">
+            <label for="email">Email</label>
+            <br>
 
-        <label for="email">
-            Email
-        </label>
+            <input class="input" type="email" name="email" id="email" placeholder="seugmail@email.com.br"required><br>
+            <label for="senha">Senha
+            </label>
 
-        <input
-            class="input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="seuemail@email.com.br"
-            required
-        >
+            <br>
 
-        <label for="senha">
-            Senha
-        </label>
+            <input class="input"type="password" id="senha" name="senha" placeholder="Sua senha" required> <br><button class="btn-enviar" type="submit">
+                ENTRAR
+            </button>
 
-        <input
-            class="input"
-            type="password"
-            id="senha"
-            name="senha"
-            placeholder="Sua senha"
-            required
-        >
+        </form>
 
-        <button class="btn-enviar" type="submit">
-            ENTRAR
+    </div>
+
+    <div class="cadastro">
+
+        <button class="btn-cadastro">
+
+            <a href="cadastro_cliente.html">
+                Não é cadastrado?
+                <br>
+                Aperte aqui
+            </a>
+
         </button>
 
-    </form>
-
-</div>
-
-<div class="cadastro">
-
-    <button class="btn-cadastro">
-        <a href="cadastro_cliente.html">
-            Não é cadastrado?
-            <br>
-            Aperte aqui
-        </a>
-    </button>
-
-</div>
-```
+    </div>
 
 </body>
 
