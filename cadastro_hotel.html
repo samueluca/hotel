@@ -4,122 +4,148 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="css/style3.css">
-    <title>Hotel - Cadastro</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #780101;
-        }
+<title>Hotel - Cadastro</title>
 
-        .form {
-            width: 400px;
-            margin: auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            border: 2px solid rgb(139, 0, 0);
-        }
+<style>
 
-        .titulo_principal {
-            color: rgb(198, 0, 0);
-            background-color: white;
-            border: 3px solid rgb(6, 6, 174);
-            margin: 30px auto;
-            border-radius: 30px;
-            width: 300px;
-            padding: 10px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #780101;
+    }
 
-        .titulo_secundario {
-            color: #99ff00;
-        }
+    .form {
+        width: 400px;
+        margin: auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 15px;
+        border: 2px solid rgb(139, 0, 0);
+    }
 
-        .input {
-            border: 1px solid darkblue;
-            border-radius: 8px;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            width: 330px;
-        }
+    .titulo_principal {
+        color: rgb(198, 0, 0);
+        background-color: white;
+        border: 3px solid rgb(6, 6, 174);
+        margin: 30px auto;
+        border-radius: 30px;
+        width: 300px;
+        padding: 10px;
+    }
 
-        .select {
-            border: 1px solid darkblue;
-            border-radius: 8px;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            width: 350px;
-        }
+    .titulo_secundario {
+        color: #99ff00;
+    }
 
-        .btn-enviar {
-            width: 350px;
-            margin-top: 15px;
-            border: none;
-            border-radius: 8px;
-            padding: 12px;
-            background-color: darkblue;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
-        }
+    .input {
+        border: 1px solid darkblue;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        width: 330px;
+    }
 
-        .btn-enviar:hover {
-            background-color: #2563EB;
-        }
-    </style>
+    .select {
+        border: 1px solid darkblue;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        width: 350px;
+    }
+
+    .btn-enviar {
+        width: 350px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        background-color: darkblue;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .btn-enviar:hover {
+        background-color: #2563EB;
+    }
+
+</style>
+```
 
 </head>
 
 <body>
 
-    <h1 class="titulo_principal">
+```
+<h1 class="titulo_principal">
 
-        🏨 Hotel - Cadastro
+    🏨 Hotel - Cadastro
 
+</h1>
 
-    </h1>
+<h2 style="color: blue;" class="titulo_secundario">
 
-    <h2 style="color: blue;" class="titulo_secundario">
+    Cadastro de Hotel
 
-        Cadastro de Hotel
+</h2>
 
+<form class="form" action="salvar_hotel.php" method="post">
 
-    </h2>
+    <label for="nome">Nome do Hotel</label><br>
 
-    <form class="form" action="salvar_hotel.php" method="post">
-        <label for="texto">Nome do Hotel </label><br>
-        <input class="input" type="text" id="nome" name="nome" placeholder="Nome do hotel" required> <br>
-        <label for="cidade"> Cidade</label><br>
-        <input class="input" type="text" id="cidade" name="cidade" placeholder="Sua cidade" required> <br>
-        <label for="estrelas"> Avaliação</label><br>
+    <input class="input" type="text" id="nome" name="nome" placeholder="Nome do hotel" required>
 
+    <br>
 
-        <select class="select" name="estrelas" id="estrelas" required>
-            <option value="">Classificação em estrelas</option>
-            <option value="1">🌟 1 Estrela - Ruim</option>
-            <option value="2">🌟🌟 2 Estrelas - Regular</option>
-            <option value="3">🌟🌟🌟 3 Estrelas - Bom</option>
-            <option value="4">🌟🌟🌟🌟 4 Estrelas - Muito Bom</option>
-            <option value="5">🌟🌟🌟🌟🌟 5 Estrelas - Excelente</option>
+    <label for="cidade">Cidade</label><br>
 
-        </select>
+    <input class="input" type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
 
-        <br>
+    <br>
 
-        <button class="btn-enviar" type="submit">
+    <label for="estrelas">Avaliação</label><br>
 
-            SALVAR
+    <select class="select" name="estrelas" id="estrelas" required>
 
-        </button>
+        <option value="">Classificação em estrelas</option>
+        <option value="1">🌟 1 Estrela - Ruim</option>
+        <option value="2">🌟🌟 2 Estrelas - Regular</option>
+        <option value="3">🌟🌟🌟 3 Estrelas - Bom</option>
+        <option value="4">🌟🌟🌟🌟 4 Estrelas - Muito Bom</option>
+        <option value="5">🌟🌟🌟🌟🌟 5 Estrelas - Excelente</option>
 
+    </select>
 
-    </form>
+    <br>
+
+    <label for="email">E-mail</label><br>
+
+    <input class="input" type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+    <br>
+
+    <label for="senha">Senha</label><br>
+
+    <input class="input" type="password" id="senha" name="senha" placeholder="Sua senha" required>
+
+    <br>
+
+    <button class="btn-enviar" type="submit">
+
+        SALVAR
+
+    </button>
+
+</form>
+
 
 </body>
 
