@@ -5,10 +5,12 @@ include 'conexao.php';
 $nome = $_POST['nome'];
 $cidade = $_POST['cidade'];
 $estrelas = $_POST['estrelas'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
 
-$sql = "INSERT INTO hoteis (nome, cidade, estrelas)
-        VALUES ('$nome', '$cidade', '$estrelas')";
+$sql = "INSERT INTO hoteis (nome, cidade, estrelas, email, senha)
+        VALUES ('$nome', '$cidade', '$estrelas', '$email', '$senha')";
 
 $resultado = mysqli_query($conexao, $sql);
 
@@ -107,6 +109,16 @@ if (!$resultado) {
     <p>
         ⭐ Estrelas: <?php echo $estrelas; ?>
     </p>
+    
+    <p>
+        Email: <?php echo $email; ?>
+    </p>
+
+    <p>
+         Senha: <?php echo "🔒🔒🔒"; ?>
+    
+</p>
+
 
    
 
