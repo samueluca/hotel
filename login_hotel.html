@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Primavera - Login Hotel</title>
+
+    <link rel="stylesheet" href="css/login_hotel.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #780101;
+        }
+
+        .form {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid rgb(139, 0, 0);
+        }
+
+        .titulo_principal {
+            color: rgb(198, 0, 0);
+            background-color: white;
+            border: 3px solid rgb(6, 6, 174);
+            margin: 30px auto;
+            border-radius: 30px;
+            width: 300px;
+            padding: 10px;
+        }
+
+        .titulo_secundario {
+            color: #99ff00;
+        }
+
+        .input {
+            border: 1px solid darkblue;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 330px;
+        }
+
+        .btn-enviar {
+            width: 350px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-enviar:hover {
+            background-color: #2563EB;
+        }
+
+        .btn-painel {
+            display: inline-block;
+            width: 325px;
+            margin-top: 20px;
+            border-radius: 8px;
+            padding: 12px;
+            background-color: darkblue;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-painel:hover {
+            background-color: #2563EB;
+        }
+
+        .cadastro {
+            margin-top: 25px;
+        }
+
+        .cadastro a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .cadastro a:hover {
+            color: #99ff00;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="titulo_principal">
+        🏨 Hotel Primavera
+    </h1>
+
+    <h2 class="titulo_secundario">
+        Acesso do Hotel
+    </h2>
+
+    <form class="form" action="autenticar.php" method="post">
+
+        <label class="label" for="email">
+            Email
+        </label>
+        <br>
+
+        <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuhotel@email.com.br"
+            required
+        >
+
+        <br>
+
+        <label class="label" for="senha">
+            Senha
+        </label>
+        <br>
+
+        <input
+            class="input"
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Sua senha"
+            required
+        >
+
+        <br><br>
+
+        <button class="btn-enviar" type="submit">
+            ENTRAR
+        </button>
+
+    </form>
+
+    <a class="btn-painel" href="autenticar_hotel.php">
+        ACESSAR PAINEL DO HOTEL
+    </a>
+
+    <div class="cadastro">
+
+        <a href="cadastro_hotel.html">
+            Novo parceiro? Cadastre-se aqui
+        </a>
+
+    </div>
+
+</body>
+
+</html>
